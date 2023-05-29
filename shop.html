@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleshop.css">
+    <title>Shop - Nudelwerk</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-group1">
+            <span class="header-box" id="login" onclick="openlogin();"><p>Einloggen</p></span>
+            <span class="header-box" id="register" onclick="openregister();"><p>Registrieren</p></span> 
+        </div>
+        <div class="header-group2">
+            <a href="home.html"><span class="header-box" id="to-Home"><p>Home</p></span></a>
+            <a href="shop.html"><span class="header-box" id="to-Shop"><p>Shop</p></span></a>
+        </div>
+    </header>
+    <nav class="navigation" id="nav">
+        <span class="Filter">
+            <img src="Bilder/Filter.svg" alt="Filtern">
+            <form class="Filterdropdown" action="" method="POST">
+                <div>
+                    <input type="checkbox" name="vegetarisch" id="vegetarisch">
+                    <label for="vegetarisch">Vegetarisch</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="vegan" id="vegan">
+                    <label for="vegan">Vegan</label>
+                </div>
+            </form>
+        </span>
+        <span class="Produktarten">
+            <a href="#nudeln"><span class="tonudeln"><p>Nudeln</p></span></a>
+            <a href="#saucen"><span class="tosaucen"><p>Saucen</p></span></a>
+        </span>
+        <span class="Einkaufstasche" onclick="openbag();"><img src="Bilder/Tasche.svg" alt="Einkaufswagen"></span>
+    </nav>
+
+    <div class="login">
+    </div>
+    <div class="register">
+    </div>
+
+    <section class="Nudeln" id="nudeln">
+        <div class="Artikel">
+            <div class="Artikel-Bild">
+                <img src="Bilder/nudelwerk.jpg" alt="">
+            </div>
+            <div class="Artikel-Bez">
+                <div class="Titel">
+                    <h2>Nudel</h2>
+                </div>
+                <div class="Beschreibung">
+                    <p>Beschreibung</p>
+                </div>
+            </div>
+            <div class="Artikel-Preis">
+                <div class="Preis">
+                    <h2>..,.. €</h2>
+                </div>
+                <div class="Button">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="Artikel">
+            <div class="Artikel-Bild">
+                <img src="Bilder/nudelwerk.jpg" alt="">
+            </div>
+            <div class="Artikel-Bez">
+                <div class="Titel">
+                    <h2>Nudel</h2>
+                </div>
+                <div class="Beschreibung">
+                    <p>Beschreibung</p>
+                </div>
+            </div>
+            <div class="Artikel-Preis">
+                <div class="Preis">
+                    <h2>..,.. €</h2>
+                </div>
+                <div class="Button">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="Artikel">
+            <div class="Artikel-Bild">
+                <img src="Bilder/nudelwerk.jpg" alt="">
+            </div>
+            <div class="Artikel-Bez">
+                <div class="Titel">
+                    <h2>Nudel</h2>
+                </div>
+                <div class="Beschreibung">
+                    <p>Beschreibung</p>
+                </div>
+            </div>
+            <div class="Artikel-Preis">
+                <div class="Preis">
+                    <h2>..,.. €</h2>
+                </div>
+                <div class="Button">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="Artikel">
+            <div class="Artikel-Bild">
+                <img src="Bilder/nudelwerk.jpg" alt="">
+            </div>
+            <div class="Artikel-Bez">
+                <div class="Titel">
+                    <h2>Nudel</h2>
+                </div>
+                <div class="Beschreibung">
+                    <p>Beschreibung</p>
+                </div>
+            </div>
+            <div class="Artikel-Preis">
+                <div class="Preis">
+                    <h2>..,.. €</h2>
+                </div>
+                <div class="Button">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Saucen" id="saucen">
+        <div class="Artikel">
+            <div class="Artikel-Bild">
+                <img src="Bilder/Nudelwerkwithoutbg.svg" alt="">
+            </div>
+            <div class="Artikel-Bez">
+                <div class="Titel">
+                    <h2>Sauce</h2>
+                </div>
+                <div class="Beschreibung">
+                    <p>Beschreibung</p>
+                </div>
+            </div>
+            <div class="Artikel-Preis">
+            </div>
+        </div>
+        <div class="Artikel">
+            <div class="Artikel-Bild">
+                <img src="Bilder/Nudelwerkwithoutbg.svg" alt="">
+            </div>
+            <div class="Artikel-Bez">
+                <div class="Titel">
+                    <h2>Sauce</h2>
+                </div>
+                <div class="Beschreibung">
+                    <p>Beschreibung</p>
+                </div>
+            </div>
+            <div class="Artikel-Preis">
+            </div>
+        </div>
+        <div class="Artikel">
+            <div class="Artikel-Bild">
+                <img src="Bilder/Nudelwerkwithoutbg.svg" alt="">
+            </div>
+            <div class="Artikel-Bez">
+                <div class="Titel">
+                    <h2>Sauce</h2>
+                </div>
+                <div class="Beschreibung">
+                    <p>Beschreibung</p>
+                </div>
+            </div>
+            <div class="Artikel-Preis">
+            </div>
+        </div>
+    </section>
+
+    <script src="shop.js"></script>
+</body>
+</html>

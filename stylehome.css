@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+body div {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: center;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  height: 6vh;
+  width: 100%;
+  z-index: 200;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  text-align: center;
+  align-items: center;
+  background-color: grey;
+}
+.header .header-group {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.header .header-group a {
+  height: 100%;
+  width: 20%;
+  text-align: center;
+  text-decoration: none;
+}
+.header .header-group a .header-box {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.header .header-group a:hover {
+  background-color: aquamarine;
+}
+
+.landing {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.landing .landingleft {
+  width: 20%;
+  background-color: bisque;
+}
+.landing .landingleft h2 {
+  margin-top: 30%;
+  padding-left: 5%;
+  font-size: 2.8rem;
+  text-decoration: underline;
+}
+.landing .landingleft ul {
+  position: relative;
+  height: 60%;
+  width: 90%;
+  margin-top: 10%;
+  list-style-type: none;
+  background-color: blanchedalmond;
+}
+.landing .landingleft ul li {
+  font-size: 2rem;
+  margin-bottom: 5%;
+  padding-left: 20%;
+}
+.landing .landingimg {
+  width: 60%;
+  background-color: aqua;
+}
+.landing .landingimg img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  margin-top: 50%;
+  transform: translateY(-50%);
+}
+.landing .landingright {
+  height: 100%;
+  width: 20%;
+}
+.landing .landingright ul {
+  height: 90%;
+  width: 100%;
+  padding-top: 40%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.landing .landingright ul span {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+}
+.landing .landingright ul span img {
+  margin-right: 1.2em;
+  height: 2rem;
+  width: auto;
+}
+.landing .landingright ul span li {
+  font-size: 2rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-image: url(Bilder/bghome.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.info .Infobild {
+  height: 100%;
+  width: 30%;
+}
+.info .Infobild img {
+  width: 76%;
+  height: auto;
+  margin-left: 12%;
+  margin-top: 50%;
+  transform: translateY(-50%);
+}
+.info .Infotext {
+  height: 100%;
+  width: 60%;
+}
+.info .Infotext .textcontainer {
+  position: relative;
+  height: 50%;
+  width: 80%;
+  margin-top: 20%;
+  background-color: blanchedalmond;
+}
+.info .Infotext .textcontainer p {
+  position: relative;
+  height: 80%;
+  width: 80%;
+  font-size: 1.4rem;
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
+.toshop {
+  position: relative;
+  background-color: black;
+}
+.toshop div {
+  height: 40%;
+  width: 60%;
+  margin: 15% 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: blanchedalmond;
+}
+.toshop div .button {
+  width: 40%;
+  height: 20%;
+  display: block;
+  font-size: 1.5rem;
+  border: 2px solid aquamarine;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+.toshop div button::before {
+  background-color: grey;
+  color: black;
+  z-index: -1;
+}/*# sourceMappingURL=stylehome.css.map */

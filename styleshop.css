@@ -1,0 +1,278 @@
+html {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 350vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  background-color: grey;
+}
+.header .header-group1 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.header .header-group2 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.header .header-group2 a {
+  height: 100%;
+  width: 20%;
+  text-align: center;
+  text-decoration: none;
+}
+.header .header-group2 a .header-box {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.header .header-group2 a:hover {
+  background-color: aquamarine;
+}
+.header .header-box {
+  width: 20%;
+  text-align: center;
+}
+.header .header-box:hover {
+  background-color: aquamarine;
+}
+
+.navigation {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 6vh;
+  height: 7vh;
+  z-index: 200;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  background-color: darkgrey;
+}
+.navigation span {
+  margin-top: 0.35vh;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.navigation span div {
+  height: 100%;
+  width: 50%;
+}
+.navigation span div a {
+  height: 100%;
+  width: 100%;
+}
+.navigation .Filter {
+  width: 15%;
+}
+.navigation .Filter img {
+  height: 100%;
+  width: auto;
+  margin-left: 2%;
+}
+.navigation .Filter .Filterdropdown {
+  position: relative;
+  height: 15vh;
+  width: 15vw;
+  z-index: 50;
+  padding-top: 3%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: aquamarine;
+}
+.navigation .Filter .Filterdropdown div {
+  display: none;
+  height: 50%;
+  width: 100%;
+  padding-top: 8%;
+}
+.navigation .Filter .Filterdropdown div input [type=checkbox] {
+  margin: 0;
+  top: 50%;
+  transform: translateY(-0.09em);
+}
+.navigation .Filter .Filterdropdown div label {
+  font-size: 1.3em;
+}
+.navigation .Filter:hover {
+  background-color: aquamarine;
+}
+.navigation .Filter:hover .Filterdropdown {
+  display: flex;
+}
+.navigation .Filter:hover .Filterdropdown div {
+  display: block;
+}
+.navigation .Produktarten {
+  height: 80%;
+  width: 20%;
+}
+.navigation .Produktarten a {
+  height: 100%;
+  width: 50%;
+  text-decoration: none;
+}
+.navigation .Produktarten a span {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.navigation .Produktarten a span p {
+  font-size: 1.1em;
+}
+.navigation .Produktarten span:hover {
+  background-color: aquamarine;
+}
+.navigation .Einkaufstasche {
+  width: 15%;
+  background-color: aquamarine;
+}
+.navigation .Einkaufstasche img {
+  height: 100%;
+  width: auto;
+  margin-right: 2%;
+}
+
+.stickynav {
+  position: sticky;
+  top: 0;
+  height: 5vh;
+}
+.stickynav span {
+  margin-top: 0;
+  height: 100%;
+}
+.stickynav .Produktarten {
+  height: 100%;
+}
+
+.Artikel {
+  margin-bottom: 3vh;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.Artikel div {
+  position: relative;
+  top: 10%;
+  height: 90%;
+}
+.Artikel .Artikel-Bild {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.Artikel .Artikel-Bild img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+.Artikel .Artikel-Bez {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.Artikel .Artikel-Bez .Titel {
+  height: 15%;
+  width: 100%;
+  text-align: center;
+}
+.Artikel .Artikel-Bez .Beschreibung {
+  height: 80%;
+  width: 90%;
+  margin-left: 5%;
+}
+.Artikel .Artikel-Preis {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+.Artikel .Artikel-Preis .Preis {
+  height: 30%;
+  width: 100%;
+}
+.Artikel .Artikel-Preis .Preis h2 {
+  padding-top: auto;
+}
+.Artikel .Artikel-Preis .Button {
+  height: 40%;
+  width: 100%;
+}
+
+.Nudeln {
+  position: relative;
+  top: 15vh;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(Bilder/bgnudeln.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.Nudeln .Artikel {
+  background-color: rgba(240, 255, 255, 0.8);
+}
+
+.Saucen {
+  position: absolute;
+  top: 230vh;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(Bilder/bgsaucen.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.Saucen .Artikel {
+  background-color: rgba(255, 228, 196, 0.8);
+}/*# sourceMappingURL=styleshop.css.map */
